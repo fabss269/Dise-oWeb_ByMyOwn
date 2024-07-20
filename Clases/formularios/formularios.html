@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <header>
+        <h1>Formularios</h1>
+    </header>
+
+    <main>
+        <form method="post" action="enviar.php">
+            <!-- el for vincula un label con una etiqueta, con el id -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" placeholder="Ingrese su nombre" required name="nombre" id="nombre">
+            <br>
+            <br>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" placeholder="Ingrese sus apellidos" required name="apellidos" id="apellidos">
+            <br>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" placeholder="Ingrese su contraseña" required name="password" id="password">
+            <br>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <hr>
+    <form method="post" action="https://webhook.site/2306a962-ffcf-4ca1-a97e-7e29853780c9">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <br>
+            <label for="email">Email:</label>
+            <input type ="email" placeholder="Ingrese su email" required name="email" id="email">
+            <br>
+            <br>
+            <label for="date">Fecha:</label>
+            <input type ="date" name="fecha" id="date">
+            <br>
+            <br>
+            <label for="time">Horario:</label>
+            <input type ="datetime-local" name="time" id="time">
+
+            <input type="submit" value="enviar">
+        </fieldset>
+    </form>
+    <hr>
+    <form>
+        <fieldset>
+            <legend>Preparar torta</legend>
+            <br>
+            <h2>Elige tu sabor</h2>
+            <br>
+            <input type ="checkbox" name="torta" id="cereza">
+            <label for="cereza">Cereza</label>
+
+            <input type ="checkbox" name="torta" id="durazno">
+            <label for="durazno">Durazno</label>
+
+            <input type ="checkbox" name="torta" id="fresa">
+            <label for="fresa">Fresa</label>
+            <br>
+            <h2>Elige tu sabor</h2>
+            <br>
+            <input type ="radio" name="sabor" id="salado" value="salado">
+            <label for="salado">Salado</label>
+
+            <input type ="radio" name="sabor" id="dulce" value="dulce">
+            <label for="dulce">Dulce</label>
+
+            <input type ="radio" name="sabor" id="frutal" value="frutal">
+            <label for="frutal">Frutal</label>
+            <br>
+            <input type="submit" value="preparar torta">
+        </fieldset>
+    </form>
+
+
+    <form>
+        <fieldset>
+            <legend>Enviar documentos</legend>
+            <br>
+            <input type="file" name="documento" id="documento" accept=".pdf, .doc, .docx">
+            <input type="range" name="rango" id="rango" min="0" max="100">
+            <input type="url" name="url" id="url">
+            <input type="color" name="color" id="color">
+            <input type="hidden" name="oculto" id="oculto" value="codigo-secreto">
+        </fieldset>
+    </form>
+
+</body>
+</html>

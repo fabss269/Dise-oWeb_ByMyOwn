@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página web de pedidos</title>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+
+    <header>
+        <img src="assets/img/logo_pizza.jpg" alt="logo">
+        <h1>Pizzeria Venecia delivery</h1>
+    </header>
+
+    <form method="post" action="https://webhook.site/4593c3f4-39ea-475d-abdc-93b078855de9">
+        <fieldset>
+            <legend>Datos del cliente</legend>
+            <label for="name">Nombre:</label>
+            <input type="text" name="nombre" id="name" required placeholder="Ingrese su nombre">
+            <label for="phone">Celular:</label>
+            <input type="number" name="phone" id="phone" required placeholder="Ingrese su celular" 
+            maxlength="9" pattern="^9\d{8}$">
+            <br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" id="apellido" required placeholder="Ingrese su apellido">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required placeholder="Ingrese su email">
+            <br>
+            <br>
+            <label for="city">Ciudad:</label>
+            <input type="text" name="city" id="city" required placeholder="Ingrese su ciudad">
+            <br>
+            <label for="codigo">Código postal:</label>
+            <input type="number" name="codigo" id="codigo" required placeholder="Ingrese su código postal">
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Personaliza tu pizza</legend>
+            <strong>Selecciona tu tipo de pizza</strong>
+            <br>
+            <input type="radio" name="tipo" id="Americana" value="Americana">
+            <label for="Americana">Americana</label>
+            <br>
+            <input type="radio" name="tipo" id="Hawaiana" value="Hawaiana">
+            <label for="Hawaiana">Hawaiana</label>
+            <br>
+            <input type="radio" name="tipo" id="Vegetariana" value="Vegetariana">
+            <label for="Vegetariana">Vegetariana</label>
+            <br>
+            <strong>Selecciona su tamaño</strong>
+            <br>
+            <input type="radio" name="tamaño" id="personal" value="personal">
+            <label for="personal">Personal</label>
+            <br>
+            <input type="radio" name="tamaño" id="mediana" value="mediana">
+            <label for="mediana">Mediana</label>
+            <br>
+            <input type="radio" name="tamaño" id="familiar" value="familiar">
+            <label for="familiar">Familiar</label>
+            <br>
+            <input type="radio" name="tamaño" id="grande" value="extra">
+            <label for="grande">Extra grande</label>
+            <br>
+            <strong>Seleccion extras</strong>
+            <br>
+            <input type="checkbox" name="extra" id="pan" value="pan">
+            <label for="pan">Pan al ajo</label>
+            <br>
+            <input type="checkbox" name="extra" id="cremas" value="cremas">
+            <label for="cremas">Cremas</label>
+            <br>
+            <input type="checkbox" name="extra" id="chicha" value="chicha">
+            <label for="chicha">Chicha</label>
+        </fieldset>
+
+        <br>
+
+        <div>
+            <label for="time">Seleccionar hora de entrega:</label>
+            <input type="time" name="time" id="time" >
+            <br>
+            <br>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Escribe un comentario"></textarea>
+        </div>
+
+
+        <input type="submit" value="Enviar">
+        
+    </form>
+
+
+</body>
+</html>

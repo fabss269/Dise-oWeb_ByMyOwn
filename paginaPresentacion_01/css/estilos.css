@@ -1,0 +1,43 @@
+#sonrisa{
+    border-radius: 50%;
+    width: 30%;           /* Ancho del círculo */
+    height: 50%;
+}
+#contenedor{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-content: center;
+    place-items: center;
+}
+.img_contenedor{
+    width: 50%;
+}
+.caja{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#presentacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+body{
+    background-color: rgb(215, 203, 219);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.title{
+    background-color: rgb(195, 136, 189);
+}
+#cabecera{
+    background-color: rgb(89, 66, 110);
+    width: 100%;
+    box-shadow: 2px 4px 2px rgb(35, 28, 42);
+}
+#nombre{
+    color: white;
+    text-shadow: 2px 2px 2px rgb(35, 28, 42);
+}
