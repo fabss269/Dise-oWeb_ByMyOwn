@@ -1,0 +1,48 @@
+button{
+    background-color: blueviolet;
+    color: aliceblue;
+    padding: 20px 30px;
+    font-size: 20px;
+}
+button:hover{
+    background-color: darkmagenta;
+    transform: scale(1.2);
+}
+#logo{
+    width: 30%;
+}
+#logo:hover{
+    transform: scale(1.2);
+}
+#email{
+    border-radius: 5px;
+    padding: 20px 30px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 5px solid greenyellow
+}
+#email:focus{
+    background-color: aliceblue;
+    color: green;
+}
+.ancla:active{
+    background-color: brown;
+}
+.article-best{
+    background-color: brown;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 20px;
+}
+.hijo-article:first-child{
+    background-color: rgb(42, 32, 175);
+}
+.hijo-article:last-child{
+    background-color: chartreuse;
+    color: brown;
+}
+.hijo-article:nth-child(4){
+    background-color: rgb(115, 10, 47);
+}
