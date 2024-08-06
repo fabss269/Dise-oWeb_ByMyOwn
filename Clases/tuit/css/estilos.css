@@ -1,0 +1,81 @@
+
+body{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 90vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+main{
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    border-radius: 20px;
+    padding: 30px;
+}
+.usuario{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+#user_img{
+    width: 40%;
+}
+.user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#suscribir{
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#suscribir:hover{
+    background-color: rgb(26, 159, 221);
+    color: white;
+}
+h3, .user p{
+    margin: 0;
+}
+.follow{
+    display: flex;
+    gap: 15px;
+}
+#puntos:hover{
+    cursor: pointer;
+}
+.comentario p{
+    line-height: 1.5;
+}
+.datos{
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+}
+.datos li:nth-child(1),.datos li:nth-child(2),.datos span{
+    color: #8c8989;
+}
+.iconos{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid #6c6a6a;
+    border-bottom: 1px solid #6c6a6a;
+    color:#8c8989;
+    padding: 15px;
+}
+#hashtag{
+    color: rgb(112, 214, 245);
+    font-weight: bold;
+}
