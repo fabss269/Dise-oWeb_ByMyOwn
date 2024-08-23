@@ -1,4 +1,6 @@
-
+#twiter{
+    text-shadow:2px 2px 8px rgba(0, 0, 0, 0.5);
+}
 body{
     background-color: aqua;
     display: flex;
@@ -7,6 +9,7 @@ body{
     color: white;
     height: 90vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-direction: column;
 }
 main{
     background-color: #333;
@@ -44,6 +47,7 @@ main{
 #suscribir:hover{
     background-color: rgb(26, 159, 221);
     color: white;
+    cursor: pointer;
 }
 h3, .user p{
     margin: 0;
@@ -78,4 +82,8 @@ h3, .user p{
 #hashtag{
     color: rgb(112, 214, 245);
     font-weight: bold;
+}
+.bi:hover{
+    color:aqua;
+    cursor: pointer;
 }
